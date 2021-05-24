@@ -1,0 +1,12 @@
+#container{
+    display: flex;
+}
+#ingredient-input{
+    display: flex;
+    margin-right: 5px;
+}
+#recipes-search{
+    display: flex;
+    font-size: 20px;
+    font-family: Copperplate;
+}

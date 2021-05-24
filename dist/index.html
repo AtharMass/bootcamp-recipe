@@ -9,7 +9,28 @@
     <title>Exam - Recipe App</title>
 </head>
 <body>
+    <div id="container">
+        <input type="text" id="ingredient-input">
+        <button id="recipes-search" onclick=searchRecipes() >Search!</button>
+    </div>
+
+    <script id="recipe-template" type="text/x-handlebars-template">
+            {{#each recipes}}
+            {{this}}
+<!--             
+                    <div class="roster" id="roster-{{ jersey }}-{{ pos }}"> 
+                        <div class="player-name">{{ firstName }} {{ lastName }}</div>
+                        <div class="jersey">{{ jersey }}</div>
+                        <img class="player-image" id="image-{{ jersey }}-{{ pos }}" src= "{{image}}/{{lastName}}/{{firstName}} "  alt="">
+                        <div class="pos">{{ pos }}</div >
+                    </div> -->
+                    
+            {{/each}}
+    </script>
     
+    <div class="recipes">
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
