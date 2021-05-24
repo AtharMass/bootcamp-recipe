@@ -10,3 +10,31 @@
     font-size: 20px;
     font-family: Copperplate;
 }
+
+.recipes{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.recipe{
+    margin:15px;
+    padding: 10px;
+    background-color: #f9da87;
+    border-radius: 2px;
+    box-shadow: #040404 2px 2px 4px;
+    font-family: "Comic Sans MS";
+
+}
+.recipe-title{
+    font-size: 18px;
+}
+.recipe-image{
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    display: block;
+    box-shadow: #040404 2px 2px 4px;
+}

@@ -11,26 +11,28 @@
 <body>
     <div id="container">
         <input type="text" id="ingredient-input">
-        <button id="recipes-search" onclick=searchRecipes() >Search!</button>
+        <button id="recipes-search" onclick="searchRecipes()" >Search!</button>
     </div>
 
     <script id="recipe-template" type="text/x-handlebars-template">
-            {{#each recipes}}
-            {{this}}
-<!--             
-                    <div class="roster" id="roster-{{ jersey }}-{{ pos }}"> 
-                        <div class="player-name">{{ firstName }} {{ lastName }}</div>
-                        <div class="jersey">{{ jersey }}</div>
-                        <img class="player-image" id="image-{{ jersey }}-{{ pos }}" src= "{{image}}/{{lastName}}/{{firstName}} "  alt="">
-                        <div class="pos">{{ pos }}</div >
-                    </div> -->
-                    
+            {{#each data}}    
+                <div class="recipe"> 
+                    <a href="{{href}}" class="recipe-title">{{title}}</a>
+                    <img class="recipe-image"  src= "{{thumbnail}}"  alt="RecipeImage">
+                    Ingredients
+                    <ul class="recipe-ingredient">
+                        {{#each ingredients}}
+                            <li class="ingredient-item">{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div> 
             {{/each}}
     </script>
     
     <div class="recipes">
     </div>
 
+    <script src="Renderer.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
